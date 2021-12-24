@@ -21,8 +21,8 @@ contract Products {
     }
 
     mapping( uint => products) public productsm;
-    mapping (uint => manfacturers) public manfacturersm;
-    mapping (uint => retailers) public retailersm;
+    mapping (uint => manfacturers) manfacturersm;
+    mapping (uint => retailers) retailersm;
 
     function new_product(string memory _manfacturer, uint _mcode, string memory _pname, uint _pcode) public {
         
